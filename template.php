@@ -3,7 +3,7 @@
 /**
  * Page alter.
  */
-function bootstrapbusiness_page_alter($page) {
+function bootstrap_business_page_alter($page) {
 	$mobileoptimized = array(
 		'#type' => 'html_tag',
 		'#tag' => 'meta',
@@ -36,7 +36,7 @@ function bootstrapbusiness_page_alter($page) {
 /**
  * Preprocess variables for html.tpl.php
  */
-function bootstrapbusiness_preprocess_html(&$variables) {
+function bootstrap_business_preprocess_html(&$variables) {
 	/**
 	 * Add IE8 Support
 	 */
@@ -45,15 +45,15 @@ function bootstrapbusiness_preprocess_html(&$variables) {
 	/**
 	* Add Javascript for enable/disable Bootstrap 3 Javascript
 	*/
-	if (theme_get_setting('bootstrap_js_include', 'bootstrapbusiness')) {
-	drupal_add_js(drupal_get_path('theme', 'bootstrapbusiness') . '/bootstrap/js/bootstrap.min.js');
+	if (theme_get_setting('bootstrap_js_include', 'bootstrap_business')) {
+	drupal_add_js(drupal_get_path('theme', 'bootstrap_business') . '/bootstrap/js/bootstrap.min.js');
 	}
 	//EOF:Javascript
 	
 	/**
 	* Add Javascript for enable/disable scrollTop action
 	*/
-	if (theme_get_setting('scrolltop_display', 'bootstrapbusiness')) {
+	if (theme_get_setting('scrolltop_display', 'bootstrap_business')) {
 
 		drupal_add_js('jQuery(document).ready(function($) { 
 		$(window).scroll(function() {
@@ -77,7 +77,7 @@ function bootstrapbusiness_preprocess_html(&$variables) {
 /**
  * Override or insert variables into the html template.
  */
-function bootstrapbusiness_process_html(&$vars) {
+function bootstrap_business_process_html(&$vars) {
 	// Hook into color.module
 	if (module_exists('color')) {
 	_color_html_alter($vars);
@@ -87,7 +87,7 @@ function bootstrapbusiness_process_html(&$vars) {
 /**
  * Preprocess variables for page template.
  */
-function bootstrapbusiness_preprocess_page(&$vars) {
+function bootstrap_business_preprocess_page(&$vars) {
 
 	/**
 	 * insert variables into page template.
@@ -133,7 +133,7 @@ function bootstrapbusiness_preprocess_page(&$vars) {
 /**
  * Override or insert variables into the page template.
  */
-function bootstrapbusiness_process_page(&$variables) {
+function bootstrap_business_process_page(&$variables) {
   // Hook into color.module.
   if (module_exists('color')) {
     _color_page_alter($variables);
@@ -143,7 +143,7 @@ function bootstrapbusiness_process_page(&$variables) {
 /**
  * Preprocess variables for block.tpl.php
  */
-function bootstrapbusiness_preprocess_block(&$variables) {
+function bootstrap_business_preprocess_block(&$variables) {
 	$variables['classes_array'][]='clearfix';
 }
 
@@ -152,7 +152,7 @@ function bootstrapbusiness_preprocess_block(&$variables) {
  *
  * Print breadcrumbs as a list, with separators.
  */
-function bootstrapbusiness_breadcrumb($variables) {
+function bootstrap_business_breadcrumb($variables) {
 	$breadcrumb = $variables['breadcrumb'];
 
 	if (!empty($breadcrumb)) {
@@ -172,7 +172,7 @@ function bootstrapbusiness_breadcrumb($variables) {
 /**
  * Search block form alter.
  */
-function bootstrapbusiness_form_alter(&$form, &$form_state, $form_id) {
+function bootstrap_business_form_alter(&$form, &$form_state, $form_id) {
 	if ($form_id == 'search_block_form') {
 	    unset($form['search_block_form']['#title']);
 	    $form['search_block_form']['#title_display'] = 'invisible';
