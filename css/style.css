@@ -556,3 +556,12 @@ ul.primary, ul.primary li a, ul.primary li.active a { border-color:#eaeaea; } ul
 .not-logged-in .block-forum .contextual-links-wrapper { display: none; }
 
 a.contextual-links-trigger, #toolbar a, textarea { -webkit-transition: none; -moz-transition: none; -o-transition: none; -ms-transition: none; transition: none; }
+
+/*admin theme style rules*/
+.page-node-edit .region-content { padding:0 40px; }
+
+.page-node-edit .vertical-tabs { clear:both; }
+
+.page-node-edit .vertical-tabs, .page-node-edit .vertical-tabs ul.vertical-tabs-list, .page-node-edit .vertical-tabs ul.vertical-tabs-list li { border-color:#dfdfdf; }
+
+.page-node-edit .vertical-tabs li { list-style:none; }
