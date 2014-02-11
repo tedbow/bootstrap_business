@@ -56,7 +56,9 @@ position: absolute; bottom: -15px; left: 0; }
 
 .title-sep .glyphicon { font-size: 13px; padding-right: 18px; }
 
-.page-node #content-wrapper h1.page-title { margin: 0; padding: 20px 40px 0; }
+.page-node #content-wrapper h1.page-title { margin: 0; padding: 20px 40px 0 0; }
+
+.page-node.page-node- #content-wrapper h1.page-title { padding: 20px 40px 0; }
 
 /*tables*/
 table { width: 100%; margin-bottom: 20px; border: 1px solid #dfdfdf; }
