@@ -236,7 +236,7 @@ position: absolute; top: 20px; right: 17px; font-size: 11px; font-weight: 400; }
 
 .node header h2 a:hover { text-decoration: none; }
 
-.node .content, #comments, .page-contact #content-wrapper { padding: 20px 40px; }
+.node > .content, #comments, .page-contact #content-wrapper { padding: 20px 40px; }
 
 .node header { padding: 10px 40px 20px; }
 
@@ -266,7 +266,9 @@ position: absolute; top: 20px; right: 17px; font-size: 11px; font-weight: 400; }
 .comment .new { margin: 10px 0; display: inline-block; }
 
 /* Taxonomy term reference */
-.field-type-taxonomy-term-reference { position: relative; float: left; } 
+.field-type-taxonomy-term-reference { position: relative; } 
+
+footer .field-type-taxonomy-term-reference { float: left; }
 
 .field-type-taxonomy-term-reference .field-label { font-weight: 400; }
 
