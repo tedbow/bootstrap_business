@@ -17,7 +17,7 @@ function bootstrap_business_form_system_theme_settings_alter(&$form, &$form_stat
     );
 
     $form['mtt_settings']['tabs'] = array(
-        '#type' => 'vertical_tabs',
+        '#type' => 'fieldset',
     );
 
     $form['mtt_settings']['tabs']['basic_settings'] = array(
