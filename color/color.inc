@@ -37,12 +37,12 @@ $info = array(
 
   // CSS files (excluding @import) to rewrite with new color scheme.
   'css' => array(
-    'color/colors.css',
+    'css/base/colors.css',
   ),
 
   // Files to copy.
   'copy' => array(
-    'logo.png',
+    'logo.svg',
   ),
 
   // Gradient definitions.
@@ -68,8 +68,7 @@ $info = array(
   'blend_target' => '#ffffff',
 
   // Preview files.
-  'preview_css' => 'color/preview.css',
-  'preview_js' => 'color/preview.js',
+  'preview_library' => 'bootstrap_business/color.preview',
   'preview_html' => 'color/preview.html',
 
   // Base file for image generation.
